@@ -1,0 +1,87 @@
+* {
+  appearance: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: Poppins;
+  outline-width: 2px;
+  outline-color: #f29d2c;
+}
+@font-face {
+  font-family: Poppins;
+  src: url("PoppinsMedium.ttf");
+}
+body {
+  background-color: #2c2c34;
+}
+.basic,
+#searchLabel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: auto;
+}
+.basic {
+  color: #ffffff;
+}
+
+/*
+=====FORM STYLE IN ORDER OF APPEARANCE=====
+*/
+.searchForm {
+  right: 50%;
+  bottom: 80%;
+  transform: translate(50%, 50%);
+  position: absolute;
+}
+#cat {
+  height: 10vh;
+  width: 10vh;
+}
+#searchLabel {
+  font-size: 1.6em;
+}
+#textField {
+  width: 40vw;
+  height: 5vh;
+  display: block;
+  text-align: center;
+  color: #000000;
+  background-color: #ffffff;
+  font-size: 1.2em;
+}
+#goButton {
+  width: 10vw;
+  height: 5vh;
+  margin-top: 1vh;
+  padding: 1vh;
+  border-radius: 25px;
+  outline: none;
+  background-color: #ffffff;
+  color: #1d1828;
+  transition: 0.2s;
+}
+#goButton:focus,
+#goButton:hover {
+  background-color: #1d1828;
+  color: #fff;
+}
+#goButton:active {
+  background-color: #f29d2c;
+}
+
+/*
+=====RESULT STYLING IN ORDER OF APPEARENCE=====
+*/
+.result {
+  right: 50%;
+  bottom: 50%;
+  transform: translate(50%, 50%);
+  position: absolute;
+}
+span {
+  color: #f29d2c;
+}
+.octicon {
+  filter: invert();
+}
